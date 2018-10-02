@@ -1,0 +1,9 @@
+#!/usr/bin/env escript
+%%! -smp enable debug verbose 
+main([String]) ->
+	try
+		luaparse:parse(String)
+	catch
+		_:_ ->
+			erro
+	end.
